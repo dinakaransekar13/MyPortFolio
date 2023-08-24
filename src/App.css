@@ -1,3 +1,11 @@
+
+.lightbg{
+  background-color: black
+}
+.darkbg{
+  background-color: goldenrod;
+}
+
 .App {
   text-align: center;
 }

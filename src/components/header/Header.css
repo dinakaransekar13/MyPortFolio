@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+}
+.header__left{
+    /* 40% Space */
+
+    flex: 0.4;  
+}
+.header__left h1{
+    text-align: center;
+    font-family: "Alanta",sans-serif;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.header__left h1 span{
+    color: orangered;
+}
+.header__right{
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header__right a h4{
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    font-family: "Crimson Text",serif;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.header__right a h4:hover{
+    transform: scale(1.09);
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-family: "Crimson Text",serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.header__rightButton{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.lightbg{
+    background-color: black
+}
+.darkbg{
+    background-color: blue !important;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+    align-items: center;
+    color: white;
+    background-color:black;
+    top: 0;
+    }
+    .header__left{
+        flex: 0.4 !important;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .header__right{
+        flex:  0.5 !important;
+        display: flex !important;
+        text-align: center;
+        margin-right: 50px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color:black;
+    top: 0;
+    }
+    .header__left{
+        flex: 0.4 !important;
+        text-align: center;
+    }
+    .header__right{
+        flex:  0.5 !important;
+        display: flex !important;
+        text-align: center;
+        margin-right: 200px !important
+        ;
+    }
+}
